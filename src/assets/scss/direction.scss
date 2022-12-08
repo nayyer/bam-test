@@ -1,0 +1,567 @@
+@import "common";
+
+//rtl mode
+[dir=rtl] {
+  .mat-form-field-appearance-outline .mat-form-field-label-wrapper {
+    right:-0.75rem !important;
+  }
+    .forgot-pass {
+      left :0;
+    }
+  body {
+    font-family: iransans;
+
+
+
+  }
+  *{
+    :not(.english){
+      -moz-font-feature-settings: "ss03";
+      -webkit-font-feature-settings: "ss03";
+      font-feature-settings: "ss03";
+    }
+  }
+  @supports (font-variation-settings: normal) {
+    body {
+      font-family: 'iransans';
+    }
+  }
+  .p-paginator{
+    flex-direction: row-reverse;
+  }
+  .p-paginator-pages {
+    direction: rtl;
+  }
+  .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last{
+  transform: rotate(180deg);
+  }
+  .mat-select-no-item{
+    font-family: iransans;
+  }
+
+  .text-dir {
+    text-align: right !important;
+  }
+
+  .text-dir-reverse {
+    text-align: left !important;
+  }
+
+  .p-component,
+  .mat-checkbox,
+  .mat-form-field,
+  .mat-body, .mat-body-1, .mat-typography, .mat-simple-snackbar,
+  .mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+    font-family: iransans;
+  }
+
+  .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    transform: rotateY(180deg);
+    margin: 0 0 0 .5rem;
+  }
+
+  .p-paginator {
+    .p-link ,.p-dropdown .p-dropdown-label {
+      font-family: iransans !important;
+    }
+
+  }
+
+}
+
+//ltr mode
+[dir=ltr] {
+  .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix{
+    right: 12px !important;
+    left: auto !important;
+  }
+  .forgot-pass {
+    left: auto;
+    right:0;
+  }
+  .header-menu-item > span > img, .header-menu-item > a > img {
+    margin: 0 0 3px 2px !important;
+  }
+
+  .crisp-client {
+    display: none !important;
+  }
+
+  .home-banner-inner {
+    h1 {
+      font-size: 70px !important;
+      color: $grey-0 !important;
+      font-weight: 800 !important;
+    }
+
+    h2 {
+      text-align: right;
+      font-size: 70px !important;
+      color: $grey-50 !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  .home-banner-inner-txt {
+    .container {
+      direction: rtl;
+    }
+  }
+
+  body {
+    .crisp-client .cc-52lo .cc-kegp .cc-1oun .cc-1qth:after {
+      content: 'Support';
+      font-family: $default-ltr-font !important;
+    }
+  }
+
+  .otp-modal > button {
+    width: 300px !important;
+  }
+
+  .app-analysis-right {
+    right: auto !important;
+    left: 0;
+  }
+
+  .app-analysis-left {
+    padding: 0 0 0 54px !important;
+  }
+
+  .mat-menu-item {
+    font-family: $default-ltr-font;
+  }
+
+  .coins-table-top-right-inner {
+    flex-direction: row-reverse;
+  }
+
+  app-wallet-withdraw {
+    .mat-form-field-appearance-outline {
+      .mat-form-field-infix {
+        width: 80px;
+      }
+    }
+  }
+
+  .app-referral-top button:first-child {
+    margin: 0 10px 0 0 !important;
+  }
+
+  .mat-tab-group, .charts-details, .mat-tab-label, .mat-tab-link, .mat-select {
+    font-family: $default-ltr-font !important;
+  }
+
+  .card-item > p {
+    padding: 0 0 0 10px;
+  }
+
+  .top-coin-item-row {
+    > span {
+      text-align: left !important;
+    }
+  }
+
+  .mat-dialog-container {
+    direction: ltr;
+  }
+
+  .header-left-btn {
+    margin-left: 0 !important;
+    margin-right: 15px;
+  }
+
+  .header {
+    padding: 0 25px 0 0 !important;
+  }
+
+  .exchange-order-item-1 {
+    i {
+      margin: 0 8px 0 0 !important;
+    }
+  }
+
+  .exchange-form-slider {
+    > span {
+      text-align: right !important;
+      margin-right: 0 !important;
+    }
+  }
+
+  .app-page-form-only-img {
+    margin: 0 0 0 50px;
+  }
+
+  app-quick-order {
+    app-dropdown p-dropdown .p-dropdown {
+      border-radius: 0 4px 4px 0 !important;
+      border-right-width: 1px !important;
+      box-shadow: none !important;
+      border-left-width: 0 !important;
+    }
+  }
+
+  .home-banner-inner h1 span {
+    margin: 0 10px 0 0 !important;
+  }
+
+  .exchange-overview-chart-market-items > button:first-of-type {
+    margin: 0 10px 0 0 !important;
+  }
+
+  .exchange-order-item-2 {
+    justify-content: flex-start !important;
+  }
+
+  .header-menu-item {
+    margin-left: 0 !important;
+    margin-right: 30px;
+  }
+
+  .header-menu {
+    padding: 0 0 0 20px !important;
+  }
+
+  .text-dir {
+    text-align: left !important;
+  }
+
+  .text-dir-reverse {
+    text-align: right !important;
+  }
+
+  .submenu-overlay {
+    right: auto !important;
+    left: 0;
+  }
+
+
+  .header-left-settings {
+    margin-right: 0 !important;
+    margin-left: 16px;
+    padding-right: 0 !important;
+    padding-left: 16px;
+    border-right: none !important;
+    border-left: 1px solid $grey-100;
+  }
+
+  .header-theme {
+    margin-right: 0 !important;
+    margin-left: 12px;
+  }
+
+  .home-banner-inner {
+    &:before {
+      transform: scaleX(-1);
+    }
+  }
+
+  .coin-table-coin {
+    > img {
+      margin-left: 0 !important;
+      margin-right: 16px;
+    }
+  }
+
+  .section-title {
+    &:after {
+      margin-right: 0 !important;
+      margin-left: 45px;
+    }
+  }
+
+  .home-features-item-right {
+    border-radius: 20px 0 0 20px !important;
+  }
+
+  .home-features-item-left {
+    border-radius: 0 20px 20px 0 !important;
+  }
+
+  .owl-theme {
+    .owl-nav:not(.disabled) {
+      flex-direction: row !important;
+    }
+  }
+
+  .home-coins-table-bottom > a {
+    > i {
+      transform: rotate(180deg);
+    }
+  }
+
+  .home-about-content-inner {
+    &:before {
+      left: auto !important;
+      right: -18px !important;
+    }
+
+    &:after {
+      left: auto !important;
+      right: -9px !important;
+    }
+
+    &:nth-of-type(even) {
+      &:before {
+        left: 0 !important;
+        right: auto !important;
+      }
+
+      &:after {
+        left: 9px !important;
+        right: auto !important;
+      }
+    }
+  }
+
+  .home-get-started-left-item {
+    > span {
+      &:after {
+        left: auto !important;
+        right: 0;
+      }
+    }
+
+    &:nth-of-type(3) {
+      > span {
+        &:after {
+          right: auto !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .app-page-header-title {
+    > h3:after {
+      margin: 0 0 0 30px;
+    }
+  }
+
+  .static-page-title-center {
+    &:before, &:after {
+      margin: 0 0 0 50px;
+    }
+
+    &:before {
+      margin: 0 50px 0 0;
+    }
+  }
+
+  .faq-categories-menu-item {
+    border-right: none !important;
+    border-left: 3px solid transparent;
+  }
+
+  .terms-item {
+    &:before {
+      margin: 0 10px 0 0 !important;
+    }
+  }
+
+  .app-pdp-right-btn > button {
+    &:first-child {
+      margin: 0 10px 0 0 !important;
+    }
+  }
+
+  .p-datatable {
+    .p-datatable-tbody {
+      > tr {
+
+        > td {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  app-quick-order {
+    .form-item {
+
+      > mat-form-field {
+
+        &.mat-form-field-appearance-outline {
+          .mat-form-field-outline-end {
+            border-radius: 0 !important;
+          }
+
+        }
+      }
+
+      > p-dropdown {
+        .p-dropdown {
+          border-radius: 0 $radius $radius 0;
+          border-left: none;
+          border-right-width: 1px;
+        }
+      }
+    }
+  }
+
+  .exchange-overview-market {
+    border-left: none !important;
+    border-right: 1px solid $light_border;
+    padding: 0 10px 0 0 !important;
+  }
+
+  .mat-form-field-appearance-outline .mat-input-element {
+    text-align: left !important;
+  }
+
+  .exchange-order-item.exchange-order-item-market {
+    > div {
+      text-align: left !important;
+    }
+  }
+
+  .exchange-filter-category-items {
+    > button:first-of-type {
+      margin: 0 8px 0 0 !important;
+    }
+  }
+
+  .table-action {
+    > button:not(:first-child) {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .form-item-inline {
+    > button {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .form-item-notice > p:before {
+    margin: 0 10px 0 0;
+  }
+
+  .form-item-notice-head > span {
+    padding: 0 0 0 10px;
+  }
+
+  .page-header-breadcrumb i {
+    transform: rotate(180deg);
+  }
+
+  .app-profile-img > h2 {
+    padding: 0 0 0 15px !important;
+  }
+
+  .app-security-item-left {
+    padding: 0 0 0 20px !important;
+  }
+
+  .app-referral-top-box-form-bottom-left {
+    > button:first-of-type {
+      margin: 0 10px 0 0 !important;
+    }
+  }
+
+  .exchange-order-item.exchange-order-item-market > div > i {
+    margin: 0 5px 0 0 !important;
+  }
+
+  @media (min-width: 992px) {
+    //app-sign-in .app-page-body, app-forgot-password .app-page-body {
+    //  background: url(/assets/images/auth/bg.png) no-repeat right center;
+    //  background-size: contain;
+    //}
+  }
+
+  .ng-otp-input-wrapper {
+    flex-direction: row;
+  }
+
+  .exchange-form-buttons {
+    > span {
+      &:before {
+        right: auto !important;
+        left: 10px;
+      }
+
+      &.exchange-form-button-sell {
+        &:before {
+          right: 10px !important;
+          left: auto !important;
+        }
+      }
+    }
+  }
+
+  .header-left-auth {
+    > button:first-child {
+      margin: 0 10px 0 0 !important;
+    }
+  }
+
+  .app-dashboard-boxes > h2:after {
+    margin: 0 0 0 20px !important;
+  }
+
+  .app-dashboard-box-half-profile-bottom-left-item {
+    padding: 0 0 0 10px !important;
+  }
+
+  .wizard-step-pages {
+    background-position-x: right !important;
+  }
+
+  @media (max-width: $laptop-width) {
+    .form-item-inline {
+      > button {
+        margin-left: 0;
+      }
+    }
+
+    .home-banner-inner {
+      h1 {
+        font-size: 40px !important;
+        font-weight: 600 !important;
+      }
+
+      h2 {
+        font-size: 30px !important;
+        font-weight: 500 !important;
+      }
+    }
+    .exchange-buttons {
+      padding: 0 0 20px 8px !important;
+
+      > img {
+        transform: rotateY(180deg);
+      }
+    }
+    .exchange-order-box.exchange-order-box-market {
+      right: auto !important;
+      left: 0;
+    }
+    .coin-table-coin > p {
+      left: auto;
+      right: 0;
+    }
+    .home-about-content-inner:after {
+      left: 9px !important;
+      right: auto !important;
+    }
+    .home-get-started-left-item {
+      > span {
+        &:after {
+          right: auto !important;
+        }
+      }
+
+      &:nth-of-type(2) > span:before {
+        left: 40px !important;
+        right: auto !important;
+      }
+
+      &:nth-of-type(3) > span:after {
+        right: auto !important;
+        left: auto !important;
+      }
+    }
+  }
+
+}

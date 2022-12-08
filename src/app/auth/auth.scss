@@ -1,0 +1,34 @@
+@import "../../assets/scss/common";
+
+main {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: $header-height;
+  bottom: $footer-height;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 25px;
+  @extend %transition3;
+  scroll-behavior: smooth;
+}
+
+:host {
+  &::ng-deep {
+  //  .app-mobile-menu {
+  //    display: none !important;
+  //  }
+  //
+  //  .header {
+  //    .header-left {
+  //      &:nth-of-type(2) {
+  //        display: none !important;
+  //      }
+  //    }
+  //  }
+    .header-left-settings{
+      border:none !important
+    }
+  //
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../assets/scss/common";
+.app-page-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wizard-step-pages {
+  background: url(/assets/images/auth/register.jpg) no-repeat left center;
+  background-size: contain;
+  min-height: 450px;
+  @media (max-width: $laptop-width){
+    background-size: 300px;
+  }
+  @media (max-width: $tablet-width){
+    padding-bottom: 430px;
+    background-position: center bottom;
+    background-size: 384px;
+  }
+}
+
+@media (max-width: 545px) {
+  .wizard-step-pages {
+    min-height: calc(100vh - #{$header-height} - #{$mobile-menu-height});
+    background: url(/assets/images/auth/register-mobile.jpg) no-repeat center -40px ;
+    background-size: cover;
+    padding: 160px 15px 15px;
+  }
+  .container {
+    padding: 15px;
+  }
+  .app-page-body{
+    padding: 0;
+  }
+  .app-page-wrapper{
+    padding: 0;
+  }
+
+}

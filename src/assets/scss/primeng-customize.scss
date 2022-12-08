@@ -1,0 +1,240 @@
+@import "common";
+
+.p-component {
+  font-size: 14px;
+}
+
+//table
+.p-datatable {
+  .p-datatable-tbody {
+    > tr {
+      background: none;
+      border-bottom: 1px solid $light_border;
+      @extend %transition2;
+
+      > td {
+        border: none;
+        text-align: right;
+        color: $oil-light-1;
+        padding: 20px 1rem;
+        @extend %caption-1-medium ;
+
+      }
+
+      //&:nth-child(odd) {
+      //  background: $light-border;
+      //}
+
+      &:hover {
+        background: $grey-0;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      > tr {
+        border: 1px solid $light_border;
+
+        &:nth-child(odd) {
+          background: $grey-0;
+
+        }
+      }
+    }
+  }
+
+  .p-datatable-thead {
+    > tr {
+      > th {
+        //background: $grey-0;
+        color: $oil-light-2;
+        text-align: center;
+        padding: 12px 1rem;
+        @extend %num-1-medium;
+      }
+
+    }
+  }
+
+  .p-paginator-bottom {
+    direction: ltr;
+  }
+
+  .p-paginator .p-dropdown {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: auto;
+  }
+
+
+  .p-dropdown .p-dropdown-trigger {
+    background: transparent;
+    color: #6c757d;
+    width: 3rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+
+}
+
+.p-inputtext {
+  width: 100%;
+  padding: 6px 0.75rem;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  &:focus:hover {
+    border-width: 1px;
+    border-color: #6366F1 !important;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    border-width: 1px;
+  }
+}
+
+
+//accordion
+
+.p-accordion {
+  p-accordiontab {
+    .p-accordion-tab {
+      margin-bottom: $vertical-space;
+      border-radius: $radius-large;
+      background: #fff;
+      border:2px solid $oil-light-5;
+
+      &.p-accordion-tab-active {
+        box-shadow: $shadow-large;
+        .p-accordion-header{
+          .p-accordion-header-link{
+            color: $violet-light-2 ;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .p-accordion-header {
+    .p-accordion-header-link {
+      border: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      padding: $vertical-space;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    .p-accordion-header-text {
+      @extend %body-1-bold;
+    }
+  }
+
+  .p-accordion-content {
+    background: transparent;
+    border: none;
+    @extend %body-2-regular;
+  }
+}
+
+//select button
+.p-buttonset {
+  background: $grey-0;
+  border-radius: $radius;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  .p-button {
+    border-radius: $radius !important;
+    width: 49%;
+    @extend %flex-center;
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+
+    &:hover {
+      background: #fff;
+    }
+
+    &.p-highlight {
+      background: #fff;
+      color: $grey-500;
+      font-weight: 600;
+
+      &:hover {
+        background: #fff;
+        color: $grey-500;
+      }
+    }
+  }
+}
+
+.p-overlaypanel {
+  z-index: 10009 !important;
+  &::before {
+    border-bottom-color: rgba(0, 0, 0, 5%);
+  }
+  .p-overlaypanel-content {
+    padding: 0;
+  }
+}
+.p-dropdown {
+  background: transparent;
+
+  .p-dropdown-trigger {
+    width: 24px;
+  }
+}
+
+.p-dropdown-items {
+  max-height: $dropdown-height;
+  overflow-y: auto;
+}
+
+.p-dropdown-panel {
+  .p-dropdown-header {
+    padding: 5px;
+
+    .p-dropdown-filter {
+      margin: 0;
+      font-size: 12px;
+    }
+
+    .p-dropdown-filter-icon {
+      right: 8px;
+    }
+  }
+}
+
+.p-link {
+  box-shadow: none !important;
+}
+
+
+
+//not responsive table
+@media screen and (max-width: 960px) {
+  app-coins-table-landing{
+    .table-not-responsive{
+      .p-datatable{
+        .p-datatable-thead{
+          > tr > th {
+            display: table-cell !important;
+          }
+        }
+      }
+
+    }
+  }
+
+
+}

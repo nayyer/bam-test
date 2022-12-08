@@ -1,0 +1,351 @@
+@import "palette";
+@import "shadow";
+@import "typography";
+@import "mixin";
+//$them-bg: #009ade;
+//$them-bg: #005CB3;
+$them-bg: $violet-light-2;
+$them-bg-4: #DBEBF9;
+$hover-bg: #FCB500;
+$hover-bg2: #E6930B;
+$reply_color: #3d8aea;
+$like_color: #11ad4f;
+$dislike_color: #ea2121;
+$site_color: #333;
+$box_shadow: #555;
+$success_color: #348f6c;
+$error_color: #ea2121;
+$info_color: #5bc0de;
+$snack_info_color: #3B82F6;
+$snack_warning_color: #F59E0B;
+$snack_success_color: #22C55E;
+$snack_error_color: #EF4444;
+$snack_info_bg_color_dark: #cce5ff;
+$snack_warning_bg_color_dark: #fff3cd;
+$snack_success_bg_color_dark: #d4edda;
+$snack_error_bg_color_dark: #f8d7da;
+
+$snack_info_color_dark: #004085;
+$snack_warning_color_dark: #856404;
+$snack_success_color_dark: #155724;
+$snack_error_color_dark: #721c24;
+
+$gold_color: #FFD700;
+$light-gold-color: #ffd500;
+$warning_color: #fda62b;
+$light_border: #eee;
+$dark_border: #161616;
+$link-color: #0822b5;
+$like-color: #ff0057;
+$pending_color: #888888;
+$input_height: 28px;
+$social_size: 40px;
+$gold-color: #ffc400;
+$line-height: 26px;
+
+$light_dark: #8C8C8C;
+$light_dark_select: #595959;
+
+$table_operation_col_index_width: 40px;
+$table_operation_col_width: 70px;
+$table_operation_col_width_two: 230px;
+$table_operation_col_width_three: 120px;
+$table_operation_col_width_four: 140px;
+$table_operation_col_width_five: 200px;
+$table_operation_col_width_six: 240px;
+$table_operation_icon_size: 30px;
+$table_image_size: 50px;
+$table_image_cell_size: 200px;
+
+$global_icon_size: 24px;
+$global_icon_size_large: 64px;
+$global_icon_size_x_big: 40px;
+$global_icon_size_big: 30px;
+$global_icon_size_small: 20px;
+$global_icon_size_x_small: 16px;
+$global_loading_size: 60px;
+$table_image_thumb_cell_size: 80px;
+$table_operation_col_width_action: 80px;
+
+
+$small-label-width: 60px;
+$medium-label-width: 80px;
+$label-width: 100px;
+$big-label-width: 120px;
+$x-big-label-width: 200px;
+$facebook-color: #0c46a7;
+$twitter-color: #16b0fa;
+$telegram-color: #2295e5;
+$instagram-color: #7238a8;
+$body-line-height: 28px;
+
+//social
+$sb-facebook: #4267B2 !default;
+$sb-twitter: #00acee !default;
+$sb-linkedin: #006fa6 !default;
+$sb-whatsapp: #25d366 !default;
+$sb-telegram: #0088cc !default;
+$sb-copy: #607D8B !default;
+
+
+//material custom variables
+$tab-header-height: 34px;
+$tooltip-color: #fff6b3;
+$datepicker-height: 34px;
+$modal-header-height: 55px;
+$modal-footer-height: 70px;
+
+
+//frame variables
+$menu-header-height: 56px;
+$menu-width: 222px;
+$sub-menu-width: 120px;
+$app-icon-size: 46px;
+$profile-icon-size: 64px;
+$side-distance: 48px;
+$top-distance: 40px;
+$page-header-height: 100px;
+$mat-menu-height: 38px;
+$dark-light: #8C8C8C;
+$selected-dark-light: #595959;
+$title-color: #262626;
+$primary-color: #3b3b3b;
+$secondary-color: #5E5E5E;
+$checkbox-color: #348F6C;
+$radius: 4px;
+$radius-medium: 8px;
+$radius-large: 16px;
+$radius-x-large: 24px;
+$table-head-color: #8C8C8C;
+$coin-size: 32px;
+$full-hd-width: 1350px;
+$desktop-width: 1200px;
+$laptop-width: 992px;
+$tablet-width: 768px;
+$mobile-width: 545px;
+
+
+$grey-0: #f4f4f4;
+$grey-50: #E8E8E8;
+$grey-100: #d1d1d1;
+$grey-150: #BABABA;
+$grey-200: #a3a3a3;
+$grey-250: #959595;
+$grey-300: #757575;
+$grey-400: #474747;
+$grey-450: #303030;
+$grey-500: #161616;
+$copyright: #757575;
+$feature-bg: #F6F7F9;
+$header-height: 72px;
+$mobile-header-height: 48px;
+
+
+//dark mode variables
+$dark-theme-bg: #004F99;
+$dark-bg: #242424;
+//$dark-bg: #020014;
+$table-head-dark-bg: #222;
+$table-head-dark-color: #bdbdbd;
+$header-bg-dark: #292929;
+$light-color: #f4f4f4;
+$light-color-2: #BEBEBE;
+$light-color-3: #D1D1D1;
+$dark-site-color: #A3A3A3;
+$error-light: #DB332A;
+$success-light: #00A841;
+$box-bg-dark:rgba(192, 213, 242, 0.06);
+$exchange-dark-bg:#171a1f;
+$exchange-dark-bg-box:#1f2124;
+$header-section-card-bg:#29296D;
+
+
+$default-ltr-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+//layout
+$sidebar-width: 170px;
+$sidebar-bg: #242424;
+$sidebar-active: #424242;
+$footer-height: 40px;
+$mobile-menu-height: 65px;
+$mobile-menu-color: #6D7885;
+$chart-height: 300px;
+$one-form-width:400px;
+$search-box-height: 48px;
+
+//collapsed panel
+$sidebar-width-collapsed: 60px;
+$dropdown-height:200px;
+
+$vertical-space-x-small : 8px;
+$vertical-space-small : 12px;
+$vertical-space-medium : 16px;
+$vertical-space : 24px;
+$vertical-space-normal : 36px;
+$vertical-space-large : 48px;
+$vertical-space-x-large : 72px;
+$icon-size-2x-large:96px;
+$icon-size-3x-large:128px;
+$icon-size-4x-large:198px;
+$icon-size-x-large:72px;
+$icon-size-large:48px;
+$icon-size:24px;
+$icon-size-medium:16px;
+//new-design-typography
+
+%header-1-black{
+    @include setFontStyle($font-black,$font-header-1,$line-height-header-1);
+}
+%header-1-bold{
+    @include setFontStyle($font-bold,$font-header-1,$line-height-header-1);
+}
+%header-1-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-header-1,$line-height-header-1);
+}
+%header-1-medium{
+  @include setFontStyle($font-medium,$font-header-1,$line-height-header-1);
+}
+
+%header-2-black{
+    @include setFontStyle($font-black,$font-header-2,$line-height-header-2);
+ }
+%header-2-bold{
+    @include setFontStyle($font-bold,$font-header-2,$line-height-header-2);
+}
+%header-2-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-header-2,$line-height-header-2);
+}
+%header-2-medium{
+  @include setFontStyle($font-medium,$font-header-2,$line-height-header-2);
+}
+
+%header-3-black{
+    @include setFontStyle($font-black,$font-header-3,$line-height-header-3);
+ }
+%header-3-bold{
+    @include setFontStyle($font-bold,$font-header-3,$line-height-header-3);
+}
+%header-3-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-header-3,$line-height-header-3);
+}
+%header-3-medium{
+  @include setFontStyle($font-medium,$font-header-3,$line-height-header-3);
+}
+
+%title-1-black{
+    @include setFontStyle($font-black,$font-title-1,$line-height-title-1);
+ }
+%title-1-bold{
+    @include setFontStyle($font-bold,$font-title-1,$line-height-title-1);
+}
+%title-1-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-title-1,$line-height-title-1);
+}
+%title-1-medium{
+  @include setFontStyle($font-medium,$font-title-1,$line-height-title-1);
+}
+
+%title-2-black{
+    @include setFontStyle($font-black,$font-title-2,$line-height-title-2);
+ }
+%title-2-bold{
+    @include setFontStyle($font-bold,$font-title-2,$line-height-title-2);
+}
+%title-2-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-title-2,$line-height-title-2);
+}
+%title-2-medium{
+  @include setFontStyle($font-medium,$font-title-2,$line-height-title-2);
+}
+
+%body-1-black{
+    @include setFontStyle($font-black,$font-body-1,$line-height-body-1);
+ }
+%body-1-bold{
+    @include setFontStyle($font-bold,$font-body-1,$line-height-body-1);
+}
+%body-1-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-body-1,$line-height-body-1);
+}
+%body-1-medium{
+  @include setFontStyle($font-medium,$font-body-1,$line-height-body-1);
+}
+%body-1-regular{
+    @include setFontStyle($font-regular,$font-body-1,$line-height-body-1);
+}
+
+%body-2-black{
+    @include setFontStyle($font-black,$font-body-2,$line-height-body-2);
+ }
+%body-2-bold{
+    @include setFontStyle($font-bold,$font-body-2,$line-height-body-2);
+}
+%body-2-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-body-2,$line-height-body-2);
+}
+%body-2-medium{
+  @include setFontStyle($font-medium,$font-body-2,$line-height-body-2);
+}
+%body-2-regular{
+    @include setFontStyle($font-regular,$font-body-2,$line-height-body-2);
+}
+
+%caption-1-black{
+    @include setFontStyle($font-black,$font-caption-1,$line-height-caption-1);
+ }
+%caption-1-bold{
+    @include setFontStyle($font-bold,$font-caption-1,$line-height-caption-1);
+}
+%caption-1-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-caption-1,$line-height-caption-1);
+}
+%caption-1-medium{
+  @include setFontStyle($font-medium,$font-caption-1,$line-height-caption-1);
+}
+%caption-1-regular{
+    @include setFontStyle($font-regular,$font-caption-1,$line-height-caption-1);
+}
+
+%caption-2-black{
+    @include setFontStyle($font-black,$font-caption-2,$line-height-caption-2);
+ }
+%caption-2-bold{
+    @include setFontStyle($font-bold,$font-caption-2,$line-height-caption-2);
+}
+%caption-2-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-caption-2,$line-height-caption-2);
+}
+%caption-2-medium{
+  @include setFontStyle($font-medium,$font-caption-2,$line-height-caption-2);
+}
+%caption-2-regular{
+    @include setFontStyle($font-regular,$font-caption-2,$line-height-caption-2);
+}
+
+%num-1-black{
+    @include setFontStyle($font-black,$font-num-1,$line-height-num-1);
+ }
+%num-1-bold{
+    @include setFontStyle($font-bold,$font-num-1,$line-height-num-1);
+}
+%num-1-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-num-1,$line-height-num-1);
+}
+%num-1-medium{
+  @include setFontStyle($font-medium,$font-num-1,$line-height-num-1);
+}
+
+%num-2-black{
+    @include setFontStyle($font-black,$font-num-2,$line-height-num-2);
+ }
+%num-2-bold{
+    @include setFontStyle($font-bold,$font-num-2,$line-height-num-2);
+}
+%num-2-semi-bold{
+    @include setFontStyle($font-semi-bold,$font-num-2,$line-height-num-2);
+}
+%num-2-medium{
+  @include setFontStyle($font-medium,$font-num-2,$line-height-num-2);
+}
+
+

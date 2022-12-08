@@ -1,0 +1,36 @@
+{
+  "DIR": "rtl",
+  "LANGUAGE": "EN",
+  "COMPLETED":"انجام شده",
+  "INPROGRESS":"در حال انجام",
+  "TOBEDONE": "تسک اجرایی",
+  "STATUS":"وضعیت",
+  "Create":"ایجاد",
+  "TASK":"تسک",
+  "SEARCH":"جستجو",
+  "fa": "فارسی",
+  "en": "انگلیسی",
+  "CREATETASK":"ایجاد تسک",
+  "TASKSLIST":"لیست تسکها",
+  "LOGIN":"ورود کاربر",
+  "LOGINBTN":"ورود",
+  "SIGNUP":"ثبت نام",
+  "NAME": "نام شما",
+  "PASSWORD": "کلمه عبور",
+  "EMAIL": "ایمیل",
+  "HAV_NOT_ACCOUNT": "حساب کاربری ندارید؟",
+  "REGISTER_NOW": "ثبت نام",
+  "SUBMIT": "ثبت",
+  "CHECKING": "درحال بررسی",
+  "YOUR_EMAI_IS_NOT_VALID": " ایمیل نامعتبر است ",
+  "EMAIL_IS_REQUIRED":"ایمیل اجباری است",
+  "FIRST_NAME": "نام",
+  "LAST_NAME": "نام خانوادگی",
+  "FULL_NAME": "نام و نام خانوادگی",
+  "LOGIN_TO_ACCOUNT": "ورود به حساب کاربری",
+  "REGISTER_BEFORE": "قبلا ثبت نام کرده اید؟",
+  "ENTER_YOUR_INFORMATION":"اطلاعات خود را وارد نمایید"
+
+
+
+}

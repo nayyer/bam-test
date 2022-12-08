@@ -1,0 +1,158 @@
+@import "../../../../assets/scss/common";
+
+footer {
+  background: $violet-light-2;
+  @extend %transition3
+}
+
+.footer-inner {
+  padding: 3*$vertical-space 0 $vertical-space;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+
+  > img {
+    margin-bottom: $vertical-space;
+  }
+
+  > h6 {
+    @extend %title-2-bold;
+    margin-bottom: $vertical-space;
+    width: 100%;
+    color: #fff;
+  }
+
+  > p {
+    width: 100%;
+    @extend %caption-2-medium;
+    margin-bottom: $vertical-space-large;
+  }
+}
+
+.footer-right-links {
+  display: flex;
+  align-items: center;
+
+  button {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px !important;
+    @extend %body-2-medium;
+
+    &:first-child {
+      margin-left: $vertical-space;
+      color: $violet-light-2;
+      border-radius: $radius;
+      background: #fff;
+
+    }
+  }
+}
+
+.footer-cert {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer-left-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  > h3 {
+    @extend %body-1-medium;
+    margin-bottom: $vertical-space;
+    width: 100%;
+    color: $violet-light-4;
+  }
+
+  > a {
+    width: 100%;
+    display: flex;
+    color: #fff;
+    margin-bottom: $vertical-space;
+    @extend %caption-1-regular
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(222, 217, 247, 0.3);
+  height: 100%;
+  padding: $vertical-space 0;
+}
+
+.copyright{
+  @extend %flex-center;
+  p {
+    color: #fff;
+    @extend %caption-2-regular
+  }
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  @extend %flex-center;
+
+  > a {
+    color: #fff;
+    margin: 0 $vertical-space-small;
+    @extend %flex-center;
+    @extend %circle;
+    width: $icon-size-large;
+    height: $icon-size-large;
+    border: 2px solid #fff;
+
+    ::ng-deep {
+      svg{
+        path {
+          &:not([stroke]){
+            fill: #fff;
+          }
+
+
+          &[stroke]{
+            stroke: #fff;
+          }
+        }
+        circle{
+          stroke: #fff;
+        }
+      }
+
+    }
+
+  }
+}
+.footer-center{
+  display: flex;
+  flex-direction: column;
+}
+.footer-bottom-right{
+  display: flex;
+  flex-direction: column;
+
+  a{
+    color: #fff;
+    @extend %caption-2-medium;
+    margin-bottom: $vertical-space-x-small;
+  }
+}
+
+//dark mode styles
+:host-context(.dark) {
+  .footer-right {
+    color: #fff;
+  }
+}

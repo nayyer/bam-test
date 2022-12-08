@@ -1,0 +1,25 @@
+@import "common";
+
+
+//ltr mode
+[dir=ltr] {
+  body.dark {
+
+    @media (min-width: $laptop-width) {
+      //app-sign-in, app-forgot-password {
+      //  .app-page-body {
+      //    background: url("/assets/images/auth/bg-dark.png") no-repeat right center;
+      //    background-size: contain;
+      //  }
+      //}
+      //app-sign-up {
+      //  .wizard-step-pages {
+      //    background: url("/assets/images/auth/bg-dark.png") no-repeat right center;
+      //    background-size: contain;
+      //  }
+      //}
+    }
+
+  }
+
+}

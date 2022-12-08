@@ -1,0 +1,83 @@
+<!-- <app-router-progress [loading] = "showProgressBar"></app-router-progress> -->
+<div class = "header" [ngClass] = "{aa:forceThemeShow && isMobileView}">
+
+  <ng-container >
+    <div class = "header-right">
+      <div class = "header-logo">
+
+      </div>
+      <div class = "header-menu">
+
+
+      </div>
+    </div>
+
+    <div class = "header-left">
+
+    </div>
+
+   
+      
+
+       <div class = "header-left-settings">
+
+        <div *ngIf = "isAuthorized" class = "header-theme ml-4" data-title = "{{'LOGOUT'|translate}}">
+            <mat-icon svgIcon = "logout-mid" (click) = "logOut()"></mat-icon>
+
+        </div>
+
+        <div class = "header-theme" (click) = "changeTheme()" data-title = "{{'THEME'|translate}}">
+          <mat-icon svgIcon = "{{theme=='dark'?'sun-mid':'moon-mid'}}"></mat-icon>
+        </div>
+        <span [matMenuTriggerFor] = "menu">{{currentLocale|translate}}
+        </span>
+
+      </div>
+      <mat-menu #menu = "matMenu">
+        <button mat-menu-item *ngFor = "let locale of allLocales" (click) = "changeLange(locale)">{{locale|translate}}</button>
+       </mat-menu>
+
+
+
+
+  </ng-container>
+
+
+</div>
+
+
+
+
+
+
+<!-- <p-overlayPanel #profileOverlay styleClass="{{theme === 'dark' ? 'dark-overlay' : ''}}">
+  <ng-template pTemplate>
+    <div class = "markets-overlay-items">
+      <a class = "markets-overlay-item-border-bottom markets-overlay-item-email" routerLink = "/panel/profile" (click) = "profileOverlay.hide()">
+        <mat-icon svgIcon = "user-mid"></mat-icon>
+        <span>{{user.user_name ? user.user_name : (user.email ? user.email : user.mobile_number)}}</span>
+      </a>
+      <a routerLink = "/panel/security" (click) = "profileOverlay.hide()">
+        <mat-icon svgIcon = "setting-thin"></mat-icon>
+        <span>{{'HEADER.SETTINGS'|translate}}</span>
+      </a>
+      <a routerLink = "/panel/notifications" (click) = "profileOverlay.hide()">
+        <mat-icon svgIcon = "notification-mid"></mat-icon>
+        <span>{{'MENU.NOTIFICATIONS'|translate}}</span>
+      </a>
+      <a class = "markets-overlay-item-border-bottom" routerLink = "/referral" (click) = "profileOverlay.hide()">
+        <mat-icon svgIcon = "user3-mid"></mat-icon>
+        <span>{{'TOP_MENU.REFERRAL'|translate}}</span>
+      </a>
+      <a class = "markets-overlay-item-logout" (click) = "profileOverlay.hide();logOut()">
+        <mat-icon svgIcon = "logout-mid"></mat-icon>
+        <span>{{'HEADER.TOP_MENU_LOGOUT'|translate}}</span>
+      </a>
+    </div>
+  </ng-template>
+</p-overlayPanel> -->
+
+
+
+
+

@@ -1,0 +1,88 @@
+@use "sass:map";
+
+$background: #F8FAFB;
+$violet: (
+  dark:(
+    1:#784FFE
+  ),
+  light:(
+    1:#0D0C52,
+    2:#5848D5,
+    3:#786DDD,
+    4:#DED9F7
+  )
+);
+$oil: (
+  dark:(
+    1:#141416,
+    2:#18191D,
+    3:#23262F,
+    4:#2D3039,
+    5:#696F7F,
+    6:#ACB0BA,
+  ),
+  light:(
+    1:#292929,
+    2:#656565,
+    3:#898989,
+    4:#E8E9ED,
+    5:#F3F5F7,
+  )
+);
+$red: (
+  1:#E2444D,
+  2:#F77088,
+  3:#F69B9F,
+  4:#F9D2D9
+);
+$green: (
+  1:#349D57,
+  2:#D9F2E1,
+);
+$fire: (
+  1:#CC6805,
+  2:#FCCC9C,
+  3:#FFEEDD,
+);
+$text-grey: #94959B;
+$text-black: #222;
+
+$oil-dark: map.get($oil, dark);
+$oil-light: map.get($oil, light);
+
+$violet-dark: map.get($violet, dark);
+$violet-light: map.get($violet, light);
+
+$violet-light-1: map.get($violet-light, 1);
+$violet-light-2: map.get($violet-light, 2);
+$violet-light-3: map.get($violet-light, 3);
+$violet-light-4: map.get($violet-light, 4);
+
+$violet-dark-1: map.get($violet-dark, 1);
+
+$oil-dark-1: map.get($oil-dark, 1);
+$oil-dark-2: map.get($oil-dark, 2);
+$oil-dark-3: map.get($oil-dark, 3);
+$oil-dark-4: map.get($oil-dark, 4);
+$oil-dark-5: map.get($oil-dark, 5);
+$oil-dark-6: map.get($oil-dark, 6);
+
+$oil-light-1: map.get($oil-light, 1);
+$oil-light-2: map.get($oil-light, 2);
+$oil-light-3: map.get($oil-light, 3);
+$oil-light-4: map.get($oil-light, 4);
+$oil-light-5: map.get($oil-light, 5);
+
+$red-1: map.get($red, 1);
+$red-2: map.get($red, 2);
+$red-3: map.get($red, 3);
+$red-4: map.get($red, 4);
+
+$green-1: map.get($green, 1);
+$green-2: map.get($green, 2);
+
+$fire-1: map.get($fire, 1);
+$fire-2: map.get($fire, 2);
+$fire-3: map.get($fire, 3);
+
+

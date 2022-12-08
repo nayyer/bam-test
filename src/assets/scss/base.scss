@@ -1,0 +1,20 @@
+@import "reset";
+@import "grid";
+@import "bitmax-icons";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~material-design-icons/iconfont/material-icons.css';
+@import "global";
+@import "wizard";
+@import "material-customize";
+@import "primeng-customize";
+@import "third-party";
+@import "social-share";
+
+
+//dark mode theme
+@import "dark-theme";
+@import "direction";
+@import "dark-direction";
+@import "theme-responsive";
+
+@import "responsive";

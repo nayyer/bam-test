@@ -1,0 +1,67 @@
+  <div class="app-page-wrapper">
+    <div class="app-page-header" *ngIf="0">
+      <div class="app-page-header-title">
+        <h3>{{'REGISTER'|translate}}</h3>
+        <p>{{'REGISTER_SUB_TITLE'|translate}}</p>
+      </div>
+    </div>
+    <div class="app-page-body">
+
+      <div class="form-container">
+        <div class="wizard-item" *ngIf="activeStepIndex==1">
+          <h2 class="form-inner-title">{{"ENTER_YOUR_INFORMATION"|translate}}</h2>
+
+          <div class="form-items">
+            <div>
+              <div [formGroup]="userProfile">
+                <mat-form-field appearance="outline" class="w-full vertical-space-large">
+                  <mat-label>{{'FIRST_NAME'|translate}}</mat-label>
+                  <input matInput formControlName="firstname" type="text" class="formControl"
+                    placeholder="first name" />
+
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-full vertical-space-large">
+                  <mat-label>{{'LAST_NAME'|translate}}</mat-label>
+                  <input matInput formControlName="lastname" type="text" class="formControl" placeholder="last name" />
+
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-full vertical-space-large">
+                  <mat-label>{{'EMAIL'|translate}}</mat-label>
+                  <input matInput formControlName="email" required [pattern]="emailPattern" type="text"
+                    class="formControl" placeholder="email" #email />
+                  <mat-error *ngIf="form1.email.errors">
+
+                    <div *ngIf="form1.email.errors.required">
+                      {{'EMAIL_IS_REQUIRED'|translate}}
+                    </div>
+                    <div *ngIf="form1.email.errors.pattern">
+                      {{'YOUR_EMAI_IS_NOT_VALID'|translate}}
+                    </div>
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-full vertical-space-large">
+                  <mat-label>{{'PASSWORD'|translate}}</mat-label>
+                  <input matInput name="password" formControlName="password" type="text" class="formControl"
+                    placeholder="password" />
+
+                </mat-form-field>
+
+                <button mat-flat-button color="primary" class="w-full !mb-6 " type="submit" (click)="onSubmit()"
+                  [disabled]="!userProfile.valid">{{isChecking ? ('CHECKING'|translate):'SUBMIT'|translate}}</button>
+
+              </div>
+              <!-- Continue with Google -->
+              <div class="formGroup" class="flex-center mb-2">
+                <button mat-flat-button color="primary" type="button" class="btn googleBtn" (click)="signInWithSSO()">
+                  <i class="fab fa-google-plus-g"></i>
+                  Continue with Google
+                </button>
+              </div>
+              <span class="caption-2-bold">{{'REGISTER_BEFORE' | translate}}</span>
+              <a class="caption-2-bold" [routerLink]="'/auth/sign-in'"> &nbsp;{{'LOGIN_TO_ACCOUNT'|translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

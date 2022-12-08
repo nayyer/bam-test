@@ -1,0 +1,96 @@
+<div class="page-wrapper">
+  <div class="page-header">
+    <h1>{{'MENU.DASHBOARD'|translate}}</h1>
+  </div>
+  <div class="page-body">
+    <div class="app-dashboard">
+      <div class="app-dashboard-boxes-center">
+        <div class="app-dashboard-box-half mb-4">
+          <div class="app-dashboard-box-half-profile">
+            <div class="app-dashboard-box-half-profile-top">
+
+            </div>
+            <div class="app-dashboard-box-half-profile-bottom" *ngIf="userInfo">
+              <div class="header-left-btn">
+                <img *ngIf="!userInfo?.photoURL"
+                  [src]="theme=='dark' ? '/assets/images/common/avatar-dark.png':'/assets/images/common/avatar.png'">
+                <img *ngIf="userInfo?.photoURL" class="align-self-start mr-5 img-thumbnail rounded-circle"
+                  [src]="userInfo?.photoURL">
+              </div>
+              <div class="app-dashboard-box-half-profile-bottom-left">
+                <div class="app-dashboard-box-half-profile-bottom-left-item">
+                  <label>{{userInfo?.displayName? userInfo?.displayName : userInfo?.firstname + " " + userInfo?.lastname }}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+            <div class="container mt-4">
+              <div class="app-dashboard-boxes-center">
+                <div class="app-dashboard-box-half mb-4">
+                <div class="col-md-12 mb-2">
+                  <h2 class="bold mb-3">{{"CREATETASK"|translate}}</h2>
+                  <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+                   
+                      <div class="form-group w-full">
+                          <mat-form-field appearance = "outline" class = "w-full vertical-space">
+                            <mat-label>{{'TASK'|translate}}</mat-label>
+                            <input matInput formControlName="task"  name="task" placeholder="Create a Task" aria-describedby="Task" >
+                            <!-- <mat-error *ngIf="!(mobile1.valid || mobile1.pristine)">
+                              *{{'YOUR_MOBILE_IS_NOT_VALID'|translate}}</mat-error>
+                            </mat-form-field> -->
+                          </mat-form-field>
+                        </div>
+
+                  
+               
+                      <div class="form-group w-full">
+                        <mat-form-field appearance = "outline" class = "w-full ">
+                          <mat-label>{{'STATUS'|translate}}</mat-label>
+                          <mat-select formControlName="status" >
+                            <mat-option *ngFor = "let status of status" [value] = "status.value">{{status.title|translate}}</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+
+
+
+                        <!-- <label for="sel1">Status:</label>
+                        <select  class="form-control" id="sel1">
+                          <option>To Be Done</option>
+                          <option>In Progress</option>
+                          <option>Completed</option>
+                        </select> -->
+                      </div>
+                    
+                    <button mat-flat-button 
+                    color="primary"
+                    class="w-full !mt-3" type="submit" [disabled]="!todoForm.valid" >{{"Create"|translate}}</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="container mt-4">
+              <div class="app-dashboard-boxes-center">
+                <div class="app-dashboard-box-half mb-4">
+                <div class="col-md-12 mb-2">
+                  <h2 class="bold mb-3">{{ "TASKSLIST"|translate}}</h2>
+                  <app-to-do *ngIf="tasks !== undefined && tasks?.length !== 0" [tasks]="tasks"
+                    (deleteTask)="deleteTask($event)" (editTask)="editTask($event)">
+                  </app-to-do>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>    
+
+       
+
+        </div>
+        </div>
+        
+

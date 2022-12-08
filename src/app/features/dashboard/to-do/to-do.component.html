@@ -1,0 +1,53 @@
+
+
+        <div class = "search-container vertical-space">
+          <mat-form-field appearance = "outline" class = "w-full ">
+            <input matInput placeholder = "{{'SEARCH'|translate}}" [(ngModel)] = "term">
+          </mat-form-field>
+        </div>
+
+
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let task of tasks|search:term; let i = index" cdkDrag>
+            <span>{{task.task}}</span>
+            <p class = "text-center" [ngClass] = "getStatusClass(task.status)">{{getStatus(task.status)|translate}}</p>
+        </div>
+    </div>
+
+
+
+    
+    <!-- <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Task Id</th>
+          <th>Task Name</th>
+          <th>Assignee</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks; let i = index">
+          <td>
+            {{task.id}}
+          </td>
+          <td>
+            {{task.task}}
+          </td>
+          <td>
+            {{task.assignee}}
+          </td>
+          <td>
+            <div class="row">
+              <div class="col-md-6">
+                {{task.status}}
+              </div>
+            
+
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table> -->
+
+  

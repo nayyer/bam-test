@@ -1,0 +1,20 @@
+
+
+<div class = "app-panel-wrapper"
+     [dir] = "dir"
+     [ngClass] = "{'app-panel-wrapper-exchange':isExchangePage,'app-panel-wrapper-full':isFullModePage,'app-panel-wrapper-home':isHomePage}">
+<!--  [ngClass] = "{'app-panel-wrapper-exchange':isExchangePage,'app-panel-wrapper-full':isFullModePage,'app-panel-wrapper-home':isHomePage}"-->
+ 
+<app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer *ngIf="!isMobileView"></app-footer>
+  <ng-container *ngIf = "isDownloadingUpdates">
+    <div class = "app-download-update-overlay"></div>
+    <!-- <div class = "app-download-update">
+      <p-progressSpinner></p-progressSpinner>
+      <span>{{'DOWNLOADING_UPDATES'|translate}}</span>
+    </div> -->
+  </ng-container>
+</div>

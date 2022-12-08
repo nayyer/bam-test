@@ -1,0 +1,15 @@
+@use "sass:map";
+@import "palette";
+$shadow:(
+1:0px 3px 10px rgba(116, 133, 139, 0.15),
+2:0px 8px 16px rgba(116, 133, 139, 0.15),
+3:0px 16px 48px rgba(116, 133, 139, 0.15),
+);
+
+%input-focus-shadow {
+  box-shadow: 0 0 0 2px transparentize($violet-light-2,0.75);
+}
+
+$shadow-small:map.get($shadow,1);
+$shadow-regular:map.get($shadow,2);
+$shadow-large:map.get($shadow,3);

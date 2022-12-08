@@ -1,0 +1,15 @@
+{
+  "DIR": "ltr",
+  "transactionNotFound": "Transaction Not Found!",
+  "LANGUAGE":  "فا",
+  "INPROGRESS":"In Progress",
+  "TOBEDONE": "To Be Done",
+  "STATUS":"Status",
+  "Create":"Create",
+  "TASK":"Task",
+  "fa": "Persian",
+  "en": "English",
+  "CREATETASK":"Create Task",
+  "TASKSLIST":"Tasks List"
+  
+}

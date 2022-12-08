@@ -1,0 +1,6 @@
+@mixin setFontStyle($weight:$font-regular,$size:$font-body-1, $lineHeight:$line-height-body-1) {
+    font-weight: $weight;
+    font-variation-settings: "wght" $weight;
+    font-size: $size;
+    line-height:$lineHeight;
+}

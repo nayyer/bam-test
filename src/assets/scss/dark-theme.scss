@@ -1,0 +1,1051 @@
+@import "common";
+
+@mixin setTheme($color:#348F6C) {
+  background: $oil-dark-1;
+  color: $light-color;
+
+  .p-skeleton {
+    background: $oil-dark-4;
+
+    &:after {
+      background: linear-gradient(90deg, transparentize($oil-dark-1, .95), transparentize($oil-dark-1, .6), transparentize($oil-dark-1, .95));
+    }
+  }
+  .app-static-page-list, .app-static-page-box,.header-section-card {
+    background: $oil-dark-3;
+  }
+  .app-static-page-box-img, .app-static-page-list-item-img {
+    background: $oil-dark-4;
+  }
+  .app-static-page-list-item > p {
+    color: #fff;
+  }
+
+
+  .header-section {
+    background-color: $oil-dark-2;
+
+    .header-text {
+      color: $oil-dark-6;
+    }
+  }
+  .vision-text {
+    color: $oil-dark-6;
+  }
+
+  input {
+    color-scheme: dark;
+    background: #2D3039;
+
+    &::placeholder {
+      color: $grey-250;
+    }
+  }
+  .exchange-order-box-market-search{
+    input{
+      background: none;
+    }
+  }
+  .header-section {
+    background-color: $oil-dark-2;
+  }
+  .mat-form-field-appearance-outline .mat-input-element {
+    border: 1px solid $oil-dark-4;
+  }
+  .otp-input {
+    border: 1px solid $oil-dark-4;
+  }
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-input-element {
+    border: 1px solid $red-1;
+  }
+  .mat-form-field-appearance-outline {
+    &.mat-focused {
+      .mat-form-field-outline-thick {
+        color: $violet-light-2;
+        border-radius: $radius;
+        border-width: 1px;
+        @extend %input-focus-shadow;
+      }
+
+      .mat-input-element, .mat-select {
+        border-color: $violet-light-2;
+        @extend %input-focus-shadow;
+      }
+    }
+  }
+
+  .avatar-show {
+    background: $box-bg-dark;
+    border-color: darken($box-bg-dark, 10%);
+  }
+  .news-box {
+    color: $grey-0;
+    background-color: $box-bg-dark;
+  }
+
+  .news {
+    border-color: $box-bg-dark;
+
+    span {
+      border-bottom-color: $box-bg-dark !important;
+    }
+  }
+
+  .charts {
+    span {
+      border-bottom-color: $box-bg-dark !important;
+    }
+  }
+  .chart-box {
+    .tick {
+      text {
+        fill: white !important
+
+      }
+
+    }
+  }
+
+  .exchange-form-buttons > span {
+    color: $grey-450;
+  }
+
+  .header-menu-item {
+    > span {
+      color: $light-color;
+    }
+  }
+  .home-banner-inner {
+    h2 {
+      //color: $dark-theme-bg !important;
+    }
+
+    h4, h3 {
+      color: $light-color-2 !important;
+    }
+  }
+
+  .section-title {
+    color: $light-color;
+  }
+
+  .coin-table-coin {
+    > span {
+      color: $grey-50;
+    }
+  }
+  .home-about-right {
+    p {
+      color: $light-color-3;
+    }
+  }
+  .p-datatable {
+    .p-datatable-tbody {
+      > tr {
+        background: $oil-dark-2;
+
+        > td {
+          > .p-column-title {
+            color: $oil-dark-6;
+            @extend %caption-1-medium
+          }
+        }
+      }
+    }
+  }
+
+
+  .home-coins-table-bottom > a {
+    color: $grey-200 !important;
+  }
+
+  .home-service-item > p {
+    color: $light-color;
+  }
+  .home-get-started-right > p {
+    color: $light-color-3;
+  }
+  .home-get-started-left-item-txt {
+    > h3 {
+      color: $light-color !important;
+    }
+
+    > p {
+      color: $light-color !important;
+    }
+  }
+
+
+  footer {
+    //background: $dark-bg;
+  }
+  .footer-right > p {
+    //color: $grey-150;
+  }
+  .copyright {
+    border-top-color: darken($dark-bg, 5%) !important;
+  }
+  .copyright-right {
+    p {
+      color: $light-color !important;
+    }
+  }
+  .footer-left-item {
+    > h3 {
+      color: #fff;
+    }
+
+    > a {
+      //color: $grey-150 !important;
+    }
+  }
+  .home-banner-inner {
+    &:before {
+      background-image: url("/assets/images/home/banner-dark.png") !important;
+    }
+  }
+
+  .header-left-settings {
+    color: $light-color;
+  }
+
+
+  .home-features-item-left {
+    color: $light-color;
+  }
+  .owl-theme {
+    .owl-nav:not(.disabled) {
+      [class*=owl-] {
+        color: $light-color !important;
+      }
+
+    }
+  }
+  .owl-next {
+    background: darken($dark-bg, 10%) !important;
+  }
+  .owl-prev {
+    background: darken($dark-bg, 10%) !important;
+  }
+  .submenu-overlay {
+    background: $header-bg-dark !important;
+
+    > a {
+      color: $light-color;
+    }
+  }
+  .mat-flat-button,
+  .mat-raised-button,
+  .mat-fab, .mat-mini-fab {
+    color: #fff;
+
+    &.mat-secondary {
+      background: $oil-dark-3;
+    }
+  }
+  .home-about-content-inner p {
+    color: $grey-100;
+  }
+  .home-about {
+    position: relative;
+
+    &:before, &:after {
+      background: url('/assets/images/home/left-dark.png') no-repeat center center !important;
+    }
+
+    &:after {
+      background: url('/assets/images/home/right-dark.png') no-repeat center center !important;
+    }
+  }
+
+  .home-features-item {
+    h3 {
+      color: $grey-50 !important;
+    }
+
+    p {
+      color: $grey-50;
+    }
+  }
+  @media (min-width: $laptop-width) {
+    //app-sign-in, app-forgot-password {
+    //  .app-page-body {
+    //    background: url("/assets/images/auth/bg-dark.png") no-repeat left center;
+    //    background-size: contain;
+    //  }
+    //}
+    //app-sign-up {
+    //  .wizard-step-pages {
+    //    background: url("/assets/images/auth/bg-dark.png") no-repeat left center;
+    //    background-size: contain;
+    //  }
+    //}
+  }
+
+
+  .wizard-title-inner {
+    > p {
+      color: $light-color;
+    }
+  }
+
+  .mat-form-field-appearance-outline {
+    .mat-form-field-outline {
+      color: currentColor;
+    }
+
+    .mat-form-field-label {
+      color: currentColor;
+    }
+  }
+  .form-inner-title {
+    color: $light-color;
+  }
+  .app-page-header-title {
+    > h3 {
+      color: $light-color;
+    }
+  }
+
+  .charts-header {
+    border-color: $box-bg-dark
+  }
+
+
+  .mat-checkbox-layout {
+    color: $light-color;
+  }
+  .mat-checkbox-frame {
+    border-color: transparentize($light-color, .4);
+  }
+  .app-static-page-img {
+    &:before {
+      background: linear-gradient(180deg, #141414 0%, rgba(0, 0, 0, 0) 100%);;
+    }
+
+    > h2 {
+      color: $grey-50;
+    }
+
+  }
+  .static-page-title-center, .static-page-text, .about-feature-item > h6 {
+    color: $light-color;
+  }
+
+  .p-accordion {
+    .p-accordion-header {
+      .p-accordion-header-link {
+        color: #fff;
+      }
+
+      &:not(.p-disabled).p-highlight .p-accordion-header-link {
+        background: $oil-dark-1;
+      }
+
+      &:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+        background: $grey-450 !important;
+        color: $light-color;
+      }
+    }
+
+    p-accordiontab {
+      .p-accordion-tab {
+        background: $oil-dark-1;
+        border-color: $oil-dark-3;
+
+        &.p-accordion-tab-active {
+          .p-accordion-content {
+            color: $oil-dark-6;
+          }
+        }
+      }
+    }
+  }
+
+  .hiring-job-offers-head {
+    > span {
+      color: $light-color !important;
+
+      &.hiring-job-offers-head-active {
+        color: $them-bg !important;
+      }
+    }
+  }
+  .hiring-job-offers-item {
+    background: $grey-450;
+  }
+
+  .hiring-job-offers-item-right {
+    > h6 {
+      color: $light-color;
+    }
+  }
+  .faq-categories-menu {
+    background: $grey-450;
+
+    > h3 {
+      color: $grey-50 !important;
+    }
+  }
+  .faq-categories-menu-item {
+    color: $grey-50;
+  }
+  .terms-item {
+    color: $light-color !important;
+
+    &:before {
+      background: $light-color !important;
+    }
+  }
+
+  .terms-items > span {
+    background: linear-gradient(to bottom, transparentize($dark-bg, .05), $dark-bg) !important;
+  }
+
+  .app-contact-left {
+    > h1 {
+      color: $light-color !important;
+    }
+
+    > a {
+      color: $light-color;
+    }
+  }
+  .app-contact-form {
+    background: $grey-450;
+
+    > h3, > p {
+      color: $light-color !important;
+    }
+  }
+  .mat-form-field {
+    color: $light-color;
+  }
+  .app-pdp-right-top-right {
+    > p {
+      > span {
+        color: $light-color !important;
+      }
+    }
+  }
+  .app-pdp-right-bottom {
+    > h6 {
+      color: $light-color;
+    }
+  }
+  .app-pdp-market-item {
+    > label {
+      color: $grey-50 !important;
+    }
+
+    > span {
+      color: $light-color;
+    }
+  }
+  .app-pdp-left-tabs-inner {
+    background: $grey-450 !important;
+
+    > span {
+      color: $grey-200;
+
+      &.app-pdp-left-tab-active {
+        color: $grey-450;
+        background: $grey-50 !important;
+      }
+    }
+  }
+  .app-pdp-left-tabs-content-item {
+    color: $light-color;
+  }
+  .app-help-box {
+    > p {
+      color: $light-color;
+    }
+
+    > img {
+      &:nth-of-type(1) {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        display: inline-flex !important;
+      }
+    }
+  }
+
+  .p-datatable {
+    .p-datatable-thead {
+      > tr {
+        > th {
+          background: $oil-dark-2;
+          color: $oil-dark-6;
+          border-bottom-color: $oil-dark-4;
+        }
+      }
+    }
+
+    .p-datatable-tbody {
+      > tr {
+        color: $light-color;
+      }
+    }
+  }
+  .page-header {
+    border-color: $dark_border;
+  }
+
+  .exchange-form {
+    .p-buttonset {
+      background: darken($dark-bg, 5%);
+
+      .p-button {
+        color: $light-color;
+
+
+      }
+    }
+  }
+  .p-buttonset {
+    background: darken($dark-bg, 5%);
+
+    .p-button {
+      &:not(.p-highlight) {
+        color: $light-color;
+      }
+    }
+  }
+  .form-item-box {
+    border-color: $grey-300;
+  }
+  .mat-select-value, .mat-select-arrow, .mat-select-placeholder {
+    color: $light-color;
+
+  }
+  .p-dropdown-header,.mat-option, .mat-select-panel {
+    background-color:$oil-dark-3 !important;
+    color:$light-color !important;
+    input {
+      color:$light-color !important;
+    }
+    }  
+  .p-dropdown-panel{
+    background: $oil-dark-3;
+    .p-dropdown-items .p-dropdown-item{
+      color:$light-color !important;
+    }
+    .p-dropdown-empty-message{
+      color:$light-color !important;
+    }
+    .p-dropdown-items .p-dropdown-item.p-highlight{
+      background-color: rgba(255, 255, 255, 0.04) !important;
+      color:$violet-dark-1 !important;
+    }
+    .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover{
+      background-color: rgba(255, 255, 255, 0.07) !important;
+    }
+  }
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color:$violet-dark-1 !important
+  }
+  .mat-option:hover:not(.mat-option-disabled), .mat-option:focus:not(.mat-option-disabled){
+    background-color: rgba(255, 255, 255, 0.04) !important;
+  }
+  .mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple){
+    background-color: rgba(255, 255, 255, 0.07) !important;
+  }
+  .exchange-overview-left-item {
+    > label {
+      color: $light-color !important;
+    }
+
+    > span {
+      color: $light-color !important;
+    }
+
+    > h6 {
+      color: $light-color !important;
+    }
+  }
+  .app-dashboard-box-item {
+    background: $box-bg-dark;
+
+    > h6 {
+      color: $light-color !important;
+    }
+  }
+  .sidebar {
+    background: $header-bg-dark !important;
+  }
+  .mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled,
+  .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled,
+  .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled,
+  .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled,
+  .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
+    color: $oil-dark-6;
+    background-color: $oil-dark-4;
+  }
+
+  .app-placeholder-loading-item-top {
+    background: linear-gradient(to right, darken($dark-bg, 10%) 2%, darken($dark-bg, 15%) 18%, darken($dark-bg, 10%) 33%);
+    background-size: 200%; // Animation Area
+  }
+  .app-placeholder-loading-wrapper {
+    .app-placeholder-loading-item-bottom {
+      > span {
+        background: linear-gradient(to right, darken($dark-bg, 10%) 2%, darken($dark-bg, 15%) 18%, darken($dark-bg, 10%) 33%);
+        background-size: 200%; // Animation Area
+      }
+    }
+  }
+
+  .exchange-order-box-market-search {
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+      color: $light-color !important;
+    }
+  }
+
+
+  .exchange-overview-chart-market-items {
+    > button {
+      &.mat-stroked-button {
+        border-color: $dark-bg !important;
+      }
+    }
+  }
+  .mat-hint {
+    color: currentColor;
+  }
+
+  .form-item-prices, .app-profile-box-header {
+    > button {
+      &.mat-stroked-button {
+        border-color: $light-color !important;
+      }
+    }
+  }
+
+
+  .exchange-filter-category-items {
+
+    > button {
+      &.mat-stroked-button {
+        border-color: $dark-bg !important;
+      }
+    }
+
+    > span {
+      color: $grey-400;
+
+      &:not(.exchange-filter-category-item-active) {
+        color: $light-color;
+      }
+    }
+  }
+
+
+  .app-security-item-left-text {
+    > p {
+      color: $grey-100 !important;
+    }
+  }
+  .mat-button.mat-primary.mat-button-disabled, .mat-button.mat-accent.mat-button-disabled, .mat-button.mat-warn.mat-button-disabled,
+  .mat-button.mat-button-disabled.mat-button-disabled, .mat-icon-button.mat-primary.mat-button-disabled,
+  .mat-icon-button.mat-accent.mat-button-disabled, .mat-icon-button.mat-warn.mat-button-disabled,
+  .mat-icon-button.mat-button-disabled.mat-button-disabled, .mat-stroked-button.mat-primary.mat-button-disabled,
+  .mat-stroked-button.mat-accent.mat-button-disabled,
+  .mat-stroked-button.mat-warn.mat-button-disabled, .mat-stroked-button.mat-button-disabled.mat-button-disabled {
+    color: transparentize(#fff, .8);
+  }
+  .app-referral-top-box {
+    > h6 {
+      color: $grey-50 !important;
+    }
+
+    > p {
+      color: $grey-100 !important;
+    }
+  }
+  .app-referral-top-box-form-slider-top-item {
+    > label, > span {
+      color: $grey-100 !important;
+    }
+  }
+  .app-referral-top-box-form-bottom-right {
+    > label {
+      color: $grey-100 !important;
+    }
+  }
+  .page-table {
+    > h3 {
+      color: $grey-100;
+    }
+  }
+  .app-notification-item-text {
+    > h6 {
+      color: $grey-50 !important;
+    }
+
+    > p {
+      color: $grey-150 !important;
+    }
+  }
+  .app-profile-box-item {
+    border-color: $dark_border !important;
+
+    > label {
+      color: $grey-50 !important;
+    }
+
+    > span {
+      color: $grey-100 !important;
+    }
+  }
+  .app-profile-img {
+    > h2 {
+      color: $light-color !important;
+    }
+  }
+  .app-dashboard-box-half-profile-bottom-left-item {
+    > label {
+      color: $light-color !important;
+    }
+  }
+  .app-dashboard-box-half-profile-top {
+    > span {
+      background: darken($dark-bg, 3%) !important;
+
+      &.app-dashboard-box-half-profile-top-active {
+        background: $hover-bg !important;
+      }
+    }
+  }
+
+  //.p-overlaypanel{
+  //  .p-overlaypanel-content{
+  //    background:darken($dark-bg,10%);
+  //  }
+  //}
+  .app-mobile-menu {
+    background: darken($dark-bg, 5%) !important;
+  }
+
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: $dark-bg;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lighten($dark-bg, 10%);
+  }
+  .header-left-btn {
+    stroke: $light-color !important;
+  }
+
+  .form-item-notice {
+    background: $box-bg-dark !important;
+  }
+  .form-item-notice-head > span {
+    color: currentColor !important;
+  }
+  .mat-tab-label, .mat-tab-link {
+    color: #fff;
+  }
+
+  .wallet-deposit-address-tab-address {
+    > p {
+      color: $light-color !important;
+    }
+  }
+  //.otp-input {
+  //  color: $site_color;
+  //}
+  .p-datatable {
+    .p-datatable-tbody {
+      > tr {
+        border-color: $oil-dark-4;
+
+        > td {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .p-inputtext {
+    color: $light-color;
+    border-color: $light-color !important;
+    background: transparent;
+
+    &:hover {
+      border-color: $light-color !important;
+      border-width: 2px;
+    }
+
+    &:focus {
+      border-color: $light-color;
+      border-width: 2px;
+    }
+  }
+  .p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
+    color: $grey-400;
+  }
+  .app-dashboard-box-half, .app-dashboard-box-bottom, .wallet-deposit-address, .app-profile-box, .app-security-item, .app-referral-top-box, .app-notification-item {
+    background: $box-bg-dark;
+  }
+  .form-item > p-dropdown .p-dropdown {
+    border-color: currentColor !important;
+  }
+  .mat-slider-track-background {
+    background-color: transparentize(#fff, .6);
+  }
+  .mat-slider:hover, .mat-slider.cdk-focused {
+    .mat-slider-track-background {
+      background-color: transparentize(#fff, .5);
+    }
+  }
+  .mat-slider.mat-slider-min-value.mat-slider-thumb-label-showing .mat-slider-thumb,
+  .mat-slider.mat-slider-min-value.mat-slider-thumb-label-showing .mat-slider-thumb-label {
+    background-color: currentColor;
+  }
+  app-exchange {
+    .page-wrapper {
+      background: $exchange-dark-bg;
+    }
+  }
+  .exchange-overview, .exchange-order-box-last-trade, .exchange-order-box, .exchange-form {
+    background: $exchange-dark-bg-box !important;
+  }
+  .form-item-text.form-item-text-selectable {
+    background: $box-bg-dark;
+
+    &:hover {
+      background: transparentize($them-bg, .8);
+    }
+  }
+  .exchange-order-item.exchange-order-item-market:hover {
+    background: $box-bg-dark !important;
+  }
+
+  /* Modal */
+  .mat-dialog-container {
+    background: $dark-bg;
+
+    .app-modal-header, .app-modal-header-title {
+      color: $light-color !important;
+      border-color: darken($box-bg-dark, 10%);
+    }
+
+    .app-modal-footer {
+      border-color: darken($box-bg-dark, 10%);
+    }
+
+
+    .app-modal-body {
+      color: $light-color !important;
+
+      .ga-code-seed > p {
+        color: $light-color !important;
+      }
+    }
+  }
+
+  app-dropdown {
+    p-dropdown {
+      .p-dropdown {
+        border-color: inherit;
+      }
+    }
+  }
+
+  .mat-snack-bar-container {
+    padding: 22px 16px !important;
+    min-height: 64px !important;
+
+    &.notice-info {
+      opacity: 0.96 !important;
+      background: $snack_info_bg_color_dark;
+      border: solid $snack_info_color_dark;
+      border-width: 0 0 0 6px;
+      color: $snack_info_color_dark;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+      span {
+        color: $snack_info_color_dark;
+      }
+    }
+
+    &.notice-warning {
+      background: $snack_warning_bg_color_dark;
+      opacity: 0.96 !important;
+      border: solid $snack_warning_color_dark;
+      border-width: 0 0 0 6px;
+      color: $snack_warning_color_dark;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+      span {
+        color: $snack_warning_color_dark;
+      }
+    }
+
+    &.notice-success {
+      background: $snack_success_bg_color_dark;
+      //transform: translateY(0px);
+      opacity: 0.96 !important;
+      border: solid $snack_success_color_dark;
+      border-width: 0 0 0 6px;
+      color: $snack_success_color_dark;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+      span {
+        color: $snack_success_color_dark;
+      }
+    }
+
+    &.notice-error {
+      background: $snack_error_bg_color_dark;
+      opacity: 0.96 !important;
+      border: solid $snack_error_color_dark;
+      border-width: 0 0 0 6px;
+      color: $snack_error_color_dark;
+      box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+      span {
+        color: $snack_error_color_dark;
+      }
+
+    }
+
+    //.mat-simple-snackbar-action {
+    //  color: #000;
+    //}
+    //.mat-simple-snackbar-action .mat-button {
+    //  span{
+    //    color:#3c3333;
+    //  }
+    //}
+  }
+  .mat-input-element:disabled, .mat-form-field-type-mat-native-select.mat-form-field-disabled .mat-form-field-infix::after {
+    color: transparentize($grey-200, .3);
+  }
+  .mat-tab-header-pagination-chevron {
+    border-color: $grey-0 !important;
+  }
+  .charts-details {
+    background: $box-bg-dark !important;
+  }
+  .app-profile-top {
+    background: $box-bg-dark;
+    border-color: darken($box-bg-dark, 10%);
+  }
+  .app-auth-links {
+    &.app-auth-links-btn {
+      background: $box-bg-dark !important;
+    }
+  }
+  .disable-action {
+    background: $box-bg-dark;
+  }
+  .app-download-update-overlay {
+    background: transparentize(#000, .5);
+  }
+  .app-download-update {
+    background: $exchange-dark-bg;
+  }
+  .callback-action {
+    border-color: lighten($box-bg-dark, 15%) !important;
+
+    &:before, &:after {
+      background: $dark-bg !important;
+    }
+  }
+  .callback-inner {
+    background: $box-bg-dark;
+  }
+  .card-item {
+    background: $box-bg-dark !important;
+    border-color: $box-bg-dark !important;
+  }
+  .card-items {
+    border-color: darken($box-bg-dark, 10%) !important;
+
+    > h6 {
+      background: darken($box-bg-dark, 10%) !important
+    }
+  }
+
+  .app-analysis-right {
+    background: $box-bg-dark !important;
+    border-left-color: darken($dark-bg, 5%);
+  }
+  .app-analysis-right-item {
+
+    &:hover {
+      background: $box-bg-dark !important;
+    }
+
+    &.app-analysis-right-item-active {
+      background: $them-bg !important;
+    }
+
+  }
+  .chart-tab {
+    background: $box-bg-dark !important;
+
+    &.chart-tab-active {
+      background: $box-bg-dark !important;
+    }
+  }
+  .p-dropdown .p-dropdown-trigger {
+    color: #fff;
+  }
+
+  .top-coin-item-row {
+    border-bottom-color: $box-bg-dark !important;
+
+    &:hover {
+      background: $box-bg-dark !important;
+    }
+  }
+  .p-paginator {
+    background: $box-bg-dark;
+  }
+
+  .mat-datepicker-toggle {
+    color: $grey-50;
+  }
+  .doc-item {
+    background: $box-bg-dark;
+
+    span {
+      border-top-color: darken($box-bg-dark, 10%) !important;
+    }
+  }
+  .doc-item-img {
+    background: darken($box-bg-dark, 10%) !important;
+  }
+  .app-page-body .form-container, .wizard-item {
+    background-color: $oil-dark-2;
+    border: none;
+  }
+
+}
+
+.dark-overlay {
+
+  &:after, &:before {
+   border-bottom-color: $oil-dark-3 !important;
+  }
+  
+  .markets-overlay-items {
+   background: $oil-dark-3 !important;
+  
+    a:not(.markets-overlay-item-logout)  {
+     color: $light-color !important;
+   }
+  }
+}
+
+body.dark {
+  @include setTheme();
+}

@@ -1,0 +1,30 @@
+@import "common";
+
+body.dark{
+  //desktop responsive styles 1200px
+  @media (max-width: $desktop-width) {
+
+  }
+
+  //laptop responsive styles 992px
+  @media (max-width: $laptop-width) {
+    .header-section-card{
+      background: $oil-dark-3;
+      color: #fff;
+    }
+    .header-section h1 {
+      color: #FFF;
+    }
+  }
+
+  //tablet responsive styles 768px
+  @media (max-width: $tablet-width) {
+
+  }
+
+  //mobile responsive styles 545px
+  @media (max-width: $mobile-width) {
+
+  }
+
+}

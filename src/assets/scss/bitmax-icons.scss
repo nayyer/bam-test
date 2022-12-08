@@ -1,0 +1,576 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/bitmax-icons/icomoon.eot?pva76d');
+  src:  url('../fonts/bitmax-icons/icomoon.eot?pva76d#iefix') format('embedded-opentype'),
+    url('../fonts/bitmax-icons/icomoon.ttf?pva76d') format('truetype'),
+    url('../fonts/bitmax-icons/icomoon.woff?pva76d') format('woff'),
+    url('../fonts/bitmax-icons/icomoon.svg?pva76d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Icon---Add---Fill:before {
+  content: "\e900";
+}
+.icon-Icon---Add---Mid:before {
+  content: "\e901";
+}
+.icon-Icon---Add---Thin:before {
+  content: "\e902";
+}
+.icon-Icon---Arrow-down---Mid:before {
+  content: "\e903";
+}
+.icon-Icon---Arrow-down---Thin:before {
+  content: "\e904";
+}
+.icon-Icon---Arrow-left---Mid:before {
+  content: "\e905";
+}
+.icon-Icon---Arrow-left---Thin:before {
+  content: "\e906";
+}
+.icon-Icon---Arrow-right---Mid:before {
+  content: "\e907";
+}
+.icon-Icon---Arrow-right---Thin:before {
+  content: "\e908";
+}
+.icon-Icon---Arrow-up---Mid:before {
+  content: "\e909";
+}
+.icon-Icon---Arrow-up---Thin:before {
+  content: "\e90a";
+}
+.icon-Icon---Bill---Fill:before {
+  content: "\e90b";
+}
+.icon-Icon---Bill---Mid:before {
+  content: "\e90c";
+}
+.icon-Icon---Bill---Thin:before {
+  content: "\e90d";
+}
+.icon-Icon---Bookmark---Fill:before {
+  content: "\e90e";
+}
+.icon-Icon---Bookmark---Mid:before {
+  content: "\e90f";
+}
+.icon-Icon---Bookmark---Thin:before {
+  content: "\e910";
+}
+.icon-Icon---Calendar---Fill:before {
+  content: "\e911";
+}
+.icon-Icon---Calendar---Mid:before {
+  content: "\e912";
+}
+.icon-Icon---Calendar---Thin:before {
+  content: "\e913";
+}
+.icon-Icon---Chart---Fill:before {
+  content: "\e914";
+}
+.icon-Icon---Chart---Mid:before {
+  content: "\e915";
+}
+.icon-Icon---Chart---Thin:before {
+  content: "\e916";
+}
+.icon-Icon---Chart-arrow-down---Mid:before {
+  content: "\e917";
+}
+.icon-Icon---Chart-arrow-down---Thin:before {
+  content: "\e918";
+}
+.icon-Icon---Chart-arrow-up---Mid:before {
+  content: "\e919";
+}
+.icon-Icon---Chart-arrow-up---Thin:before {
+  content: "\e91a";
+}
+.icon-Icon---Chart-wave---Mid:before {
+  content: "\e91b";
+}
+.icon-Icon---Chart-wave---Thin:before {
+  content: "\e91c";
+}
+.icon-Icon---Check-circle---Fill:before {
+  content: "\e91d";
+}
+.icon-Icon---Check-circle---Mid:before {
+  content: "\e91e";
+}
+.icon-Icon---Check-circle---Thin:before {
+  content: "\e91f";
+}
+.icon-Icon---Check-rectangle---Fill:before {
+  content: "\e920";
+}
+.icon-Icon---Check-rectangle---Mid:before {
+  content: "\e921";
+}
+.icon-Icon---Check-rectangle---Thin:before {
+  content: "\e922";
+}
+.icon-Icon---Clear---Fill:before {
+  content: "\e923";
+}
+.icon-Icon---Clear---Mid:before {
+  content: "\e924";
+}
+.icon-Icon---Clear---Thin:before {
+  content: "\e925";
+}
+.icon-Icon---Copy---Fill:before {
+  content: "\e926";
+}
+.icon-Icon---Copy---Mid:before {
+  content: "\e927";
+}
+.icon-Icon---Copy---Thin:before {
+  content: "\e928";
+}
+.icon-Icon---Direction-down---Mid:before {
+  content: "\e929";
+}
+.icon-Icon---Direction-down---Thin:before {
+  content: "\e92a";
+}
+.icon-Icon---Direction-left---Mid:before {
+  content: "\e92b";
+}
+.icon-Icon---Direction-left---Thin:before {
+  content: "\e92c";
+}
+.icon-Icon---Direction-left-2---Mid:before {
+  content: "\e92d";
+}
+.icon-Icon---Direction-left-2---Thin:before {
+  content: "\e92e";
+}
+.icon-Icon---Direction-right---Mid:before {
+  content: "\e92f";
+}
+.icon-Icon---Direction-right---Thin:before {
+  content: "\e930";
+}
+.icon-Icon---Direction-right-2---Mid:before {
+  content: "\e931";
+}
+.icon-Icon---Direction-right-2---Thin:before {
+  content: "\e932";
+}
+.icon-Icon---Direction-up---Mid:before {
+  content: "\e933";
+}
+.icon-Icon---Direction-up---Thin:before {
+  content: "\e934";
+}
+.icon-Icon---Document---Fill:before {
+  content: "\e935";
+}
+.icon-Icon---Document---Mid:before {
+  content: "\e936";
+}
+.icon-Icon---Document---Thin:before {
+  content: "\e937";
+}
+.icon-Icon---Edit---Fill:before {
+  content: "\e938";
+}
+.icon-Icon---Edit---Mid:before {
+  content: "\e939";
+}
+.icon-Icon---Edit---Thin:before {
+  content: "\e93a";
+}
+.icon-Icon---Eye---Mid:before {
+  content: "\e93b";
+}
+.icon-Icon---Eye---Thin:before {
+  content: "\e93c";
+}
+.icon-Icon---Eye-disable---Fill:before {
+  content: "\e93d";
+}
+.icon-Icon---Eye-disable---Mid:before {
+  content: "\e93e";
+}
+.icon-Icon---Eye-disable---Thin:before {
+  content: "\e93f";
+}
+.icon-Icon---Eye--Fill:before {
+  content: "\e940";
+}
+.icon-Icon---Filter---Fill:before {
+  content: "\e941";
+}
+.icon-Icon---Filter---Mid:before {
+  content: "\e942";
+}
+.icon-Icon---Filter---Thin:before {
+  content: "\e943";
+}
+.icon-Icon---Filter-2---Thin:before {
+  content: "\e944";
+}
+.icon-Icon---Globe---Fill:before {
+  content: "\e945";
+}
+.icon-Icon---Globe---Mid:before {
+  content: "\e946";
+}
+.icon-Icon---Globe---Thin:before {
+  content: "\e947";
+}
+.icon-Icon---Headphone---Fill:before {
+  content: "\e948";
+}
+.icon-Icon---Headphone---Mid:before {
+  content: "\e949";
+}
+.icon-Icon---Headphone---Thin:before {
+  content: "\e94a";
+}
+.icon-Icon---Help---Fill:before {
+  content: "\e94b";
+}
+.icon-Icon---Help---Mid:before {
+  content: "\e94c";
+}
+.icon-Icon---Help---Thin:before {
+  content: "\e94d";
+}
+.icon-Icon---Home---Fill:before {
+  content: "\e94e";
+}
+.icon-Icon---Home---Mid:before {
+  content: "\e94f";
+}
+.icon-Icon---Home---Thin:before {
+  content: "\e950";
+}
+.icon-Icon---Id-card---Fill:before {
+  content: "\e951";
+}
+.icon-Icon---Id-card---Mid:before {
+  content: "\e952";
+}
+.icon-Icon---Id-card---Thin:before {
+  content: "\e953";
+}
+.icon-Icon---Information---Fill:before {
+  content: "\e954";
+}
+.icon-Icon---Information---Mid:before {
+  content: "\e955";
+}
+.icon-Icon---Information---Thin:before {
+  content: "\e956";
+}
+.icon-Icon---Information-Circle---Fill:before {
+  content: "\e957";
+}
+.icon-Icon---Information-Circle---Mid:before {
+  content: "\e958";
+}
+.icon-Icon---Information-Circle---Thin:before {
+  content: "\e959";
+}
+.icon-Icon---Instagram---Fill:before {
+  content: "\e95a";
+}
+.icon-Icon---Instagram---Mid:before {
+  content: "\e95b";
+}
+.icon-Icon---Instagram---Thin:before {
+  content: "\e95c";
+}
+.icon-Icon---Linkedin---Fill:before {
+  content: "\e95d";
+}
+.icon-Icon---Linkedin---Mid:before {
+  content: "\e95e";
+}
+.icon-Icon---Linkedin---Thin:before {
+  content: "\e95f";
+}
+.icon-Icon---Lock---Fill:before {
+  content: "\e960";
+}
+.icon-Icon---Lock---Mid:before {
+  content: "\e961";
+}
+.icon-Icon---Lock---Thin:before {
+  content: "\e962";
+}
+.icon-Icon---Login---Fill:before {
+  content: "\e963";
+}
+.icon-Icon---Login---Mid:before {
+  content: "\e964";
+}
+.icon-Icon---Login---Thin:before {
+  content: "\e965";
+}
+.icon-Icon---Logout--Fill:before {
+  content: "\e966";
+}
+.icon-Icon---Logout--Mid:before {
+  content: "\e967";
+}
+.icon-Icon---Logout--Thin:before {
+  content: "\e968";
+}
+.icon-Icon---Mobile---Fill:before {
+  content: "\e969";
+}
+.icon-Icon---Mobile---Mid:before {
+  content: "\e96a";
+}
+.icon-Icon---Mobile---Thin:before {
+  content: "\e96b";
+}
+.icon-Icon---Money---Fill:before {
+  content: "\e96c";
+}
+.icon-Icon---Money---Mid:before {
+  content: "\e96d";
+}
+.icon-Icon---Money---Thin:before {
+  content: "\e96e";
+}
+.icon-Icon---Money-income---Fill:before {
+  content: "\e96f";
+}
+.icon-Icon---Money-income---Mid:before {
+  content: "\e970";
+}
+.icon-Icon---Money-income---Thin:before {
+  content: "\e971";
+}
+.icon-Icon---Money-profit---Fill:before {
+  content: "\e972";
+}
+.icon-Icon---Money-profit---Mid:before {
+  content: "\e973";
+}
+.icon-Icon---Money-profit---Thin:before {
+  content: "\e974";
+}
+.icon-Icon---Moon---Fill:before {
+  content: "\e975";
+}
+.icon-Icon---Moon---Mid:before {
+  content: "\e976";
+}
+.icon-Icon---Moon---Thin:before {
+  content: "\e977";
+}
+.icon-Icon---More---Fill:before {
+  content: "\e978";
+}
+.icon-Icon---More---Mid:before {
+  content: "\e979";
+}
+.icon-Icon---More---Thin:before {
+  content: "\e97a";
+}
+.icon-Icon---New-notification--Fill:before {
+  content: "\e97b";
+}
+.icon-Icon---New-notification--Mid:before {
+  content: "\e97c";
+}
+.icon-Icon---New-notification--Thin:before {
+  content: "\e97d";
+}
+.icon-Icon---Notification---Fill:before {
+  content: "\e97e";
+}
+.icon-Icon---Notification---Mid:before {
+  content: "\e97f";
+}
+.icon-Icon---Notification---Thin:before {
+  content: "\e980";
+}
+.icon-Icon---Pie---Fill:before {
+  content: "\e981";
+}
+.icon-Icon---Pie---Mid:before {
+  content: "\e982";
+}
+.icon-Icon---Pie---Thin:before {
+  content: "\e983";
+}
+.icon-Icon---Pin---Fill:before {
+  content: "\e984";
+}
+.icon-Icon---Pin---Mid:before {
+  content: "\e985";
+}
+.icon-Icon---Pin---Thin:before {
+  content: "\e986";
+}
+.icon-Icon---Remove---Mid:before {
+  content: "\e987";
+}
+.icon-Icon---Remove---Thin:before {
+  content: "\e988";
+}
+.icon-Icon---Remove-rectangle---Fill:before {
+  content: "\e989";
+}
+.icon-Icon---Remove-rectangle---Mid:before {
+  content: "\e98a";
+}
+.icon-Icon---Remove-rectangle---Thin:before {
+  content: "\e98b";
+}
+.icon-Icon---Search---Mid:before {
+  content: "\e98c";
+}
+.icon-Icon---Search---Thin:before {
+  content: "\e98d";
+}
+.icon-Icon---Search-2---Fill:before {
+  content: "\e98e";
+}
+.icon-Icon---Search-2---Mid:before {
+  content: "\e98f";
+}
+.icon-Icon---Setting---Fill:before {
+  content: "\e990";
+}
+.icon-Icon---Setting---Mid:before {
+  content: "\e991";
+}
+.icon-Icon---Setting---Thin:before {
+  content: "\e992";
+}
+.icon-Icon---Share---Fill:before {
+  content: "\e993";
+}
+.icon-Icon---Share---Mid:before {
+  content: "\e994";
+}
+.icon-Icon---Share---Thin:before {
+  content: "\e995";
+}
+.icon-Icon---Silent-notification--fill:before {
+  content: "\e996";
+}
+.icon-Icon---Silent-notification--Mid:before {
+  content: "\e997";
+}
+.icon-Icon---Silent-notification--Thin:before {
+  content: "\e998";
+}
+.icon-Icon---star---Fill:before {
+  content: "\e999";
+}
+.icon-Icon---star---Mid:before {
+  content: "\e99a";
+}
+.icon-Icon---star---Thin:before {
+  content: "\e99b";
+}
+.icon-Icon---Sun---Fill:before {
+  content: "\e99c";
+}
+.icon-Icon---Sun---Mid:before {
+  content: "\e99d";
+}
+.icon-Icon---Sun---Thin:before {
+  content: "\e99e";
+}
+.icon-Icon---Teitter---Fill:before {
+  content: "\e99f";
+}
+.icon-Icon---Teitter---Mid:before {
+  content: "\e9a0";
+}
+.icon-Icon---Teitter---Thin:before {
+  content: "\e9a1";
+}
+.icon-Icon---Telegram---Fill:before {
+  content: "\e9a2";
+}
+.icon-Icon---Telegram---Mid:before {
+  content: "\e9a3";
+}
+.icon-Icon---Telegram---Thin:before {
+  content: "\e9a4";
+}
+.icon-Icon---Trash---Fill:before {
+  content: "\e9a5";
+}
+.icon-Icon---Trash---Mid:before {
+  content: "\e9a6";
+}
+.icon-Icon---Trash---Thin:before {
+  content: "\e9a7";
+}
+.icon-Icon---UnLock---Fill:before {
+  content: "\e9a8";
+}
+.icon-Icon---UnLock---Mid:before {
+  content: "\e9a9";
+}
+.icon-Icon---UnLock---Thin:before {
+  content: "\e9aa";
+}
+.icon-Icon---User---Fill:before {
+  content: "\e9ab";
+}
+.icon-Icon---User---Mid:before {
+  content: "\e9ac";
+}
+.icon-Icon---User---Thin:before {
+  content: "\e9ad";
+}
+.icon-Icon---User-3---Fill:before {
+  content: "\e9ae";
+}
+.icon-Icon---User-3---Mid:before {
+  content: "\e9af";
+}
+.icon-Icon---User-3---Thin:before {
+  content: "\e9b0";
+}
+.icon-Icon---Wallet---Fill:before {
+  content: "\e9b1";
+}
+.icon-Icon---Wallet---Mid:before {
+  content: "\e9b2";
+}
+.icon-Icon---Wallet---Thin:before {
+  content: "\e9b3";
+}
+.icon-Icon---Warning-error--Fill:before {
+  content: "\e9b4";
+}
+.icon-Icon---Warning-error--Mid:before {
+  content: "\e9b5";
+}
+.icon-Icon---Warning-error--Thin:before {
+  content: "\e9b6";
+}

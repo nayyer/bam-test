@@ -1,0 +1,64 @@
+@use "sass:map";
+
+$weight: (
+  1:900,
+  2:700,
+  3:600,
+  4:500,
+  5:400
+);
+$fontSize: (
+  1:80px,
+  2:62px,
+  3:48px,
+  4:36px,
+  5:28px,
+  6:21px,
+  7:16px,
+  8:14px,
+  9:11px,
+  10:9px
+);
+
+$lineHeight:(
+  1:120px,
+  2:96px,
+  3:72px,
+  4:54px,
+  5:42px,
+  6:32px,
+  7:24px,
+  8:18px,
+  9:14px
+);
+
+$font-black:map.get($weight,1);
+$font-bold:map.get($weight,2);
+$font-semi-bold:map.get($weight,3);
+$font-medium:map.get($weight,4);
+$font-regular:map.get($weight,5);
+
+$font-header-1:map.get($fontSize,1);
+$font-header-2:map.get($fontSize,2);
+$font-header-3:map.get($fontSize,3);
+$font-title-1:map.get($fontSize,4);
+$font-title-2:map.get($fontSize,5);
+$font-body-1:map.get($fontSize,6);
+$font-body-2:map.get($fontSize,7);
+$font-caption-1:map.get($fontSize,8);
+$font-caption-2:map.get($fontSize,9);
+$font-num-1:map.get($fontSize,9);
+$font-num-2:map.get($fontSize,10);
+
+$line-height-header-1:map.get($lineHeight,1);
+$line-height-header-2:map.get($lineHeight,2);
+$line-height-header-3:map.get($lineHeight,3);
+$line-height-title-1:map.get($lineHeight,4);
+$line-height-title-2:map.get($lineHeight,5);
+$line-height-body-1:map.get($lineHeight,6);
+$line-height-body-2:map.get($lineHeight,7);
+$line-height-caption-1:map.get($lineHeight,7);
+$line-height-caption-2:map.get($lineHeight,8);
+$line-height-num-1:map.get($lineHeight,8);
+$line-height-num-2:map.get($lineHeight,9);
+

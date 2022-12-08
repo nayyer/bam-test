@@ -1,0 +1,74 @@
+
+  <div class="app-page-wrapper">
+    <div class="app-page-body">
+      <!--      login form mode-->
+      <div class="form-container">
+      <ng-container >
+
+          <h2 class="form-top-title {{isMobileView ? 'flex justify-center' : ''  }}" >{{'LOGIN'|translate}}</h2>
+          <div class="form-items">
+
+            <mat-form-field appearance="outline" [floatLabel]="floatLabelType" class="w-full vertical-space">
+              <mat-label>{{'EMAIL'|translate}}</mat-label>
+              <input matInput [(ngModel)]="form.email" 
+                     #email="ngModel" name="email"
+                     [readonly]="isCheckingLogin" (keydown.enter)="submit()" inputmode="decimal">
+              <mat-icon matSuffix svgIcon = "mobile-mid"></mat-icon>
+              <mat-error *ngIf="!(email.valid || email.pristine)">
+                *{{'YOUR_MOBILE_IS_NOT_VALID'|translate}}</mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline" class="w-full vertical-space " [floatLabel]="floatLabelType">
+
+              <mat-label><span>{{'PASSWORD'|translate}}</span></mat-label>
+              <input [dir]="'ltr'" matInput [(ngModel)]="form.password" [type]="isPasswordVisible ?'text': 'password'"
+                     [readonly]="isCheckingLogin"
+                     placeholder="{{'SECURITY.KEYBOARD_LATIN'|translate}}"
+                     (keydown.enter)="submit()">
+              <mat-icon matSuffix class="link" [ngClass]="{'theme-color':isPasswordVisible}"
+                        svgIcon="{{isPasswordVisible ? 'eye-disable-mid' : 'eye-mid'}}"
+                        matTooltip="{{isPasswordVisible?('HIDE_PASSWORD'|translate):('SHOW_PASSWORD'|translate)}}"
+                        (click)="isPasswordVisible=!isPasswordVisible">
+              </mat-icon>
+            </mat-form-field>
+
+
+
+          </div>
+
+          <button mat-flat-button 
+                  color="primary"
+                  class="w-full !mb-3"
+                  (click)="submit()"
+                  [disabled]="isCheckingLogin || !checkFormIsValid()">{{isCheckingLogin ? ('CHECKING'|translate) : 'LOGINBTN'|translate}}</button>
+
+          <div class="sso-button-container mt-6 ">
+              <!-- Calling GoogleAuth Api from AuthService -->
+            <div class="formGroup">
+              <button  mat-flat-button color="warn" type="button" class="btn googleBtn" (click)="signInWithSSO()">
+                <i class="fab fa-google-plus-g"></i>
+                Log in with Google
+              </button>
+            </div>
+          </div>
+          <div class="register-text-container">
+            <span class="register-text"> {{'HAV_NOT_ACCOUNT'|translate}} </span>
+            <a [routerLink]="'/auth/sign-up'">
+              {{'REGISTER_NOW'|translate}}
+            </a>
+          </div>
+      </ng-container>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+

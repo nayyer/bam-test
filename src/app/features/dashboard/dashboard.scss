@@ -1,0 +1,269 @@
+@import "../../../assets/scss/common";
+
+.page-wrapper {
+  //background: $grey-50;
+}
+
+:host {
+  &::ng-deep {
+    .owl-theme .owl-nav [class*=owl-] {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @extend %flex-center;
+      padding: 10px;
+      border-radius: 50%;
+      background: transparentize($site_color,.65);
+
+      &.owl-next {
+        left: auto;
+        right: 0;
+      }
+    }
+    .chart-legend .legend-label-color{
+      margin: 0 5px;
+    }
+  }
+}
+
+.app-dashboard-carousel-item {
+  display: flex;
+  //border-radius: $radius;
+
+  > img {
+    width: 100%;
+    border-radius: $radius;
+    //height: 160px;
+  }
+}
+
+.app-dashboard-top {
+  margin-bottom: 30px;
+}
+
+.app-dashboard-boxes {
+  display: flex;
+  flex-wrap: wrap;
+
+  > h2 {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: '';
+      height: 1px;
+      background: $hover-bg;
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+  }
+}
+
+.app-dashboard-box-item {
+  @extend %fullSize;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: $radius;
+  @extend %light-shadow;
+  padding: 25px;
+  cursor: pointer;
+
+  > img {
+    margin-bottom: 30px;
+    width: 140px;
+  }
+
+  > h6 {
+    width: 100%;
+    color: $grey-500;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  > p {
+    text-align: justify;
+  }
+}
+
+.app-dashboard-boxes-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-dashboard-box-half {
+  @extend %light-shadow;
+  background-color: white;
+  border-radius: $radius;
+  width: 49%;
+  padding: 15px;
+}
+
+.app-dashboard-box-half-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-dashboard-box-half-profile-top {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  > span {
+    padding: 5px 15px;
+    background: $grey-50;
+    @extend %transition3;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: $radius;
+    font-width: 600;
+
+    &.app-dashboard-box-half-profile-top-active {
+      background: $hover-bg;
+      color: #fff;
+    }
+  }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.app-dashboard-box-half-profile-bottom {
+  display: flex;
+  align-items: center;
+
+  > mat-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+  }
+  img{
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+
+.app-dashboard-box-half-profile-bottom-left {
+  flex-grow: 1;
+}
+
+.app-dashboard-box-half-profile-bottom-left-item {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  margin-bottom: 10px;
+
+  > label {
+    color: $grey-400;
+    font-weight: 600;
+  }
+
+  > span {
+    color: darken($hover-bg,10%);
+    padding:0 10px;
+    font-weight: 600;
+  }
+}
+
+.app-dashboard-box-half-profile-bottom-left-item-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  > button {
+    margin-right: 10px;
+  }
+}
+
+.app-dashboard-box-half-calc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > h6 {
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.app-dashboard-box-half-calc-btn{
+  @extend %flex-center;
+  padding-top: 10px;
+  width: 100%;
+  >a{
+    padding: 0 60px !important;
+  }
+}
+
+.app-dashboard-box-half-calc-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+  app-mat-dropdown {
+    margin-bottom: 30px;
+    width: 100%;
+
+    &::ng-deep {
+      .p-dropdown {
+        width: 100%;
+      }
+    }
+  }
+
+  > span {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &:first-of-type {
+    > span {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.app-dashboard-box-bottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  @extend %light-shadow;
+  margin-bottom: 30px;
+
+
+}
+
+.app-dashboard-box-bottom-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  > h3 {
+    font-weight: 600;
+
+  }
+
+  > mat-icon {
+    cursor: pointer;
+    color: $grey-400;
+  }
+}
+
+.app-dashboard-box-bottom-chart {
+  @extend %flex-center;
+}

@@ -1,0 +1,41 @@
+@import "../../../assets/scss/common";
+:host {
+  &::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-prefix, .mat-form-field-appearance-outline .mat-form-field-suffix {
+      //top: 7px !important;
+    }
+
+  //.forgot-pass {
+  //  [dir=rtl] & {
+  //
+  //    right: 0;
+  //  }
+  //}
+  }
+}
+
+.sso-button-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.app-page-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+    .forgot-pass {
+      @extend %num-2-medium;
+    }
+    .register-text-container{
+      a{
+        @extend %caption-2-medium;
+      }
+    }
+    .register-text {
+      @extend %caption-2-regular;
+    }
+
+}
+
